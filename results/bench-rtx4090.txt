@@ -1,0 +1,14 @@
+## RTX 4090, i9-13900K (32 threads), JDK 25, JGraphT 1.5.3, TornadoVM 8.1.0
+
+soc-LiveJournal1.txt.gz: 4847571 vertices, 68993773 edges, loaded in 6.3 s; 100 iterations, damping 0.85
+JGraphT PageRank (1 thread) 37067 ms | CSR Java 32 threads 1665 ms | TornadoVM cuda-0-0 298 ms (incl. upload/download) | 124.5x vs JGraphT, 5.6x vs Java threads
+max |score - JGraphT|: Java threads 5.50e-15, TornadoVM 5.50e-15 (max score 1.70e-04)
+soc-LiveJournal1.txt.gz: 4847571 vertices, 68993773 edges, loaded in 5.9 s; 100 iterations, damping 0.85
+JGraphT PageRank (1 thread) 35218 ms | CSR Java 32 threads 1690 ms | TornadoVM opencl-1-0 311 ms (incl. upload/download) | 113.3x vs JGraphT, 5.4x vs Java threads
+max |score - JGraphT|: Java threads 5.50e-15, TornadoVM 5.50e-15 (max score 1.70e-04)
+web-Google.txt.gz: 875713 vertices, 5105039 edges, loaded in 0.5 s; 100 iterations, damping 0.85
+JGraphT PageRank (1 thread) 2731 ms | CSR Java 32 threads 216 ms | TornadoVM cuda-0-0 61 ms (incl. upload/download) | 44.9x vs JGraphT, 3.6x vs Java threads
+max |score - JGraphT|: Java threads 1.05e-14, TornadoVM 1.05e-14 (max score 9.24e-04)
+web-Google.txt.gz: 875713 vertices, 5105039 edges, loaded in 0.5 s; 100 iterations, damping 0.85
+JGraphT PageRank (1 thread) 2521 ms | CSR Java 32 threads 218 ms | TornadoVM opencl-1-0 65 ms (incl. upload/download) | 38.7x vs JGraphT, 3.3x vs Java threads
+max |score - JGraphT|: Java threads 1.05e-14, TornadoVM 1.05e-14 (max score 9.24e-04)
